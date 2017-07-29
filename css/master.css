@@ -1,0 +1,645 @@
+
+h1{
+    display: inline-block;
+    width: 360px;
+
+    text-align: center;
+    font-family: ClearSans-Regular;
+    font-size: 32px;
+    color: #2ab69d;
+}
+/* Заголовок*/
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+header div{
+    padding-top: 27px;
+    padding-bottom: 27px;
+    display: inline-block;
+
+}
+.headerPromo{
+    font-family: ClearSans-Regular;
+    font-size: 29px;
+    width: 360px;
+    text-align: center;
+    padding-top: 26px;
+}
+.headerPhone{
+    font-family: ClearSans-Bold;
+    font-size: 19px;
+    text-align: center;
+
+    width: 360px;
+}
+.headerPhone a{
+    font-family: ClearSans-Regular;
+    margin-top: 5px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-color: #e65848;
+}
+/*Главное меню*/
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #343844;
+
+}
+nav a{
+    display: inline-block;
+    width: 150px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    font-family: ClearSans-Regular;
+    color: white;
+
+}
+nav a:hover{
+    color: #fdc536;
+}
+/*первый экран*/
+.firstScreen{
+    width: 100%;
+    height: 776px;
+
+    background-image: url("../img/WomanWithCoffe.png");
+    background-clip: border-box;
+    background-position: 88% 50%;
+}
+.firstScreenListUL{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+}
+.firstScreen h2{
+    font-size: 56px;
+    font-family: ClearSans-Thin;
+    margin-left: 58px;
+}
+
+.firstScreenListUL>div{
+    margin-top: 45px;
+    display: flex;
+    align-items: flex-start;
+
+    font-size: 24px;
+    font-family: ClearSans-Bold;
+}
+.firstScreenListULtext {
+    margin-left: 24px;
+}
+.firstScreenForm{
+    background-color: #fdc536;
+    margin-top: -30px;
+}
+.formflex{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+.redButton{
+    width: 210px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: brown;
+    color: white;
+    box-shadow: none;
+    margin-left: 250px;
+
+}
+.firstScreenForm p{
+    display: block;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    font-family: ClearSans-Bold;
+    text-align: center;
+}
+.firstScreenForm p:last-child{
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+.arrowButton{
+    /*position: relative;
+    top: 16px;
+    left: -3px;*/
+    margin-left:-12px;
+    width: 23px;
+    height: 46px;
+    display: inline-block;
+    background-color: #2ab69d;
+    background-image: url("../img/Arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.firstScreenForm input{
+
+    display: inline-block;
+    width: 210px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-family: ClearSans-Bold;
+    text-align: center;
+}
+#Name{
+    margin-left: 15px;
+    margin-right: 30px;
+
+}
+#Phone{
+    margin-right: 30px;
+}
+#reasonListMask{
+
+    display: inline-block;
+    width: 210px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-family: ClearSans-Bold;
+    text-align: center;
+    background-color: white;
+}
+.reasonList{
+    margin-top: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 210px;
+    display: inline-block;
+
+}
+.reasonList li{
+    list-style-type: none;
+
+    display: inline-block;
+    width: 210px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-family: ClearSans-Bold;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.reasonList li:hover{
+    background-color: cornflowerblue;
+}
+/**/
+.featuresHeader{
+    width: 100%;
+    text-align: center;
+    font-family: ClearSans-Regular;
+    font-size: 37px;
+}
+.featuresHeader span{
+    color: #2ab69d;
+}
+
+/*--собственно вид ликвидации--*/
+.feature{
+
+    display: block;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-family: ClearSans-Bold;
+}
+.contHeader{
+    display: block;
+    margin-left: 0px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #2ab69d;
+    width: 70%;
+    color: #fcf2d7;
+}
+.featureContent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: wrap;
+    border-left: 3px solid #2ab69d;
+    border-right: 3px solid #2ab69d;
+
+    background-color: #fcf2d7;
+
+}
+.featureContentCol{
+    width: 300px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+.featureContentCol:last-child{
+    margin-right: 15px;
+}
+.featureTile{
+
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 45px;
+
+}
+.featureUL{
+    font-size: 15px;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: ClearSans-Light;
+}
+.featureUL li:before {/*собственно сам маркер*/
+    display: inline-block;
+    border: 5px solid #2ab69d;
+    content: " ";
+    margin-right: 10px;
+}
+.featureStats{
+    background-color: #2ab69d;
+    color: white;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.featureStats span{
+    display: block;
+}
+.featureResume{
+    color: #2ab69d;
+}
+/* форма способа*/
+.featureForm{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #fdc536;
+
+}
+.featureForm h2{
+
+    display: inline-block;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.featureForm .featureFormFieldset{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.featureFormFieldset input{
+    width: 280px;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.featureFormFieldset input[type="submit"]{
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #e65848;
+    border: none;
+    color: white;
+}
+
+.featureForm p{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+}
+/*мы помогли*/
+.weHelp{
+    margin-left: 16px;
+    margin-top: 44px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: stretch;
+    flex-wrap: wrap;
+
+    background-image: url("../img/WeHelpBackground.png");
+    background-position: 50% 50%;
+    background-clip: border-box;
+
+    color: #fcf2d7;
+    font-family: ClearSans-Light;
+}
+
+.weHelp .weHelpHeader{
+    font-size: 35px;
+    text-align: center;
+}
+
+.weHelp .weHelpHeader span{
+    color: #2ab69d;
+}
+
+.weHelp .weHelpRow1{
+    margin-bottom: 65px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    font-size: 19x;
+}
+.weHelpRow1 div{
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: wrap;
+    padding-left: 5px;
+}
+.weHelpRow1:last-child{
+    margin-bottom: 35px;
+}
+.weHelpRow1 img{
+    display: inline-block;
+    width: 98px;
+    height: 80px;
+}
+.weHelpRow1 p{
+    padding-left: 3px;
+
+    display: inline-block;
+    width: 280px;
+    margin-top: 0px;
+}
+
+/*карта*/
+.treashureMap{
+
+    margin-left: 16px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+.treashureMap h2{
+    font-family: ClearSans-Light;
+    font-size: 55px;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.treashureMap p{
+
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 70%;
+
+    font-size: 20px;
+    text-align: center;
+    font-family: ClearSans-Light;
+}
+.map{
+    width: 100%;
+    height: 580px;
+    background-image: url("../img/WorldMap.png");
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: 5% 50%;
+
+}
+/*Гарантии*/
+.fourthGuaranties{
+    margin-left: 16px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: stretch;
+}
+.fourthGuaranties h2{
+    display: inline-block;
+    font-family: ClearSans-Light;
+    font-size: 52px;
+    text-align: center;
+    width: 100%;
+}
+.fourthGuaranties h2 span{
+    color: #2ab69d;
+}
+
+.fourthGuarantiesRow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-family: ClearSans-Light;
+}
+.fourthGuarantiesRow .fourthGuarantiesColumn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 300px;
+}
+.fourthGuarantiesRow .fourthGuarantiesColumn h3{
+    font-size: 25px;
+    text-align: center;
+}
+.fourthGuarantiesRow .fourthGuarantiesColumn p{
+    text-align: center;
+}
+
+.fourthGuarantiesRow img{
+    width: 95px;
+    height: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.fourthGuarantiesColumn:first-child img{
+    margin-bottom: 15px;
+}
+
+.finalForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    font-family: ClearSans-Light;
+    background-color: #343844;
+}
+.finalForm>h2{
+    margin-top: 30px;
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fcf2d7;
+    font-size: 52px;
+    text-align: center;
+}
+.finalForm>form{
+    width: 90%;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+#submitfinale{
+    height: 43px;
+}
+
+/*step by step*/
+.stepByStep{
+    width: 1200px;
+    background-image: url("../img/Scale.png");
+    background-repeat: no-repeat;
+    background-size: 1000px 150px;
+    background-position: 50% 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.stepByStep h2{
+    font-family: ClearSans-Light;
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stepByStepRow1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.stepByStepRow2{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rowTile{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+.rowTile p{
+    text-align: center;
+    font-weight: bold;
+    font-family: ClearSans-Bold;
+}
+.Contacts{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/Manufacturnaya.png");
+}
+
+.contactList{
+    margin-left: 15px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #343844;
+    font-family: ClearSans-Light;
+    font-weight: bold;
+    padding-bottom: 35px;
+}
+.contactList span{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 320px;
+    color: #2ab69d;
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+.contactList span p{
+    margin-left: 15px;
+}
+.contValue{
+    color: #fcf2d7;
+    margin-left: 47px;
+}
+
+.contactList h2{
+    font-family: ClearSans-Light;
+    font-size: 50px;
+    color: #fcf2d7;
+}
+
+footer{
+    background-color: #2ab69d;
+    text-align: center;
+}
+footer span{
+    display: inline-block;
+    background-color: white;
+    font-family: ClearSans-Light;
+    font-size: 40px;
+    color: #2ab69d;
+    margin-left: auto;
+    margin-right: auto;
+    width: 420px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.hidden{
+    display: none;
+}
+

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        @font-face {
+            font-family: ClearSans-Regular; /* Гарнитура шрифта */
+            src: url(fonts/TTF/ClearSans-Regular.ttf); /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: ClearSans-Bold; /* Гарнитура шрифта */
+            src: url(fonts/TTF/ClearSans-Bold.ttf); /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: ClearSans-Light; /* Гарнитура шрифта */
+            src: url(fonts/TTF/ClearSans-Light.ttf); /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: ClearSans-Italic; /* Гарнитура шрифта */
+            src: url(fonts/TTF/ClearSans-Italic.ttf); /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: ClearSans-Medium; /* Гарнитура шрифта */
+            src: url(fonts/TTF/ClearSans-Medium.ttf); /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: ClearSans-MediumItalic; /* Гарнитура шрифта */
+            src: url(fonts/TTF/ClearSans-MediumItalic.ttf); /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: ClearSans-Thin; /* Гарнитура шрифта */
+            src: url(fonts/TTF/ClearSans-Thin.ttf); /* Путь к файлу со шрифтом */
+        }
+    </style>
+</head>
+<main>
+<header>
+    <h1>Нижегородский юридический центр</h1>
+    <div class="headerPromo">Все виды ликвидации OOO в Нижнем Новгороде</div>
+    <div class="headerPhone">
+        +7(831)217-15-98
+        <a href="#" class="headerPhoneButton">Заказать звонок</a>
+    </div>
+</header>
+
+<nav>
+    <a href="#" id="navRef1">Официальная ликвидация</a>
+    <a href="#" id="navRef2">Ликвидация через продажу</a>
+    <a href="#" id="navRef3">Реорганизация фирмы</a>
+    <a href="#" id="navRef4">Продажа в офшор</a>
+    <a href="#" id="navRef5">Ликвидация через банкротство</a>
+    <a href="#" id="navRef6">Гарантии</a>
+    <a href="#" id="navRef7">Схемы работы</a>
+
+</nav>
+<article class="firstScreen">
+    <h2>Узнайте, как официально и без головной боли ликвидировать ООО</h2>
+    <section class="firstScreenList">
+        <div class="firstScreenListUL">
+            <div>
+
+                <img src="img/CheckBox.png" alt="check" class="checbox">
+                <div class="firstScreenListULtext">Без налоговых проверок.</div>
+            </div>
+            <div>
+                <img src="img/CheckBox.png" alt="check" class="checbox">
+                <div class="firstScreenListULtext">Подготовка документов за 24 часа.</div>
+            </div>
+            <div><img src="img/CheckBox.png" alt="check" class="checbox">
+                <div class="firstScreenListULtext">Скидки при ликвидации 2х и более ООО.</div>
+            </div>
+            <div><img src="img/CheckBox.png" alt="check" class="checbox">
+                <div class="firstScreenListULtext">Вы предоставляете документы,<br> мы делаем всё остальное</div>
+            </div>
+        </div>
+
+    </section>
+
+</article>
+<!--форма-->
+<form action="#" method="post" class="firstScreenForm">
+    <p>Наш юрист поможет вам выбрать персональный вариант ликвидации</p>
+    <div class="formflex">
+    <input type="text" id="Name" name="name" value="Введите имя" />
+    <input type="text" id="Phone" name="name" value="Введите телефон" />
+    <select name="reason" id="Reason" value="some reason" class="hidden">
+        <option value="reason1">reason1</option>
+        <option value="reason2">reason2</option>
+    </select>
+    <div id="reasonListMask">Причина ликвидации</div>
+    <ul class="reasonList hidden" id="ul1">
+        <li id="reasonValue1">reason1</li>
+        <li id="reasonValue2">reason2</li>
+    </ul>
+    <div id="arrowButton1" class="arrowButton"></div>
+    <input type="submit" value="Бесплатная консультация" class="redButton">
+    </div>
+    <p>*Ваши данные в безопасности и не будут переданы третьим лицам</p>
+
+
+</form>
+<!--5 видов ликвидации -->
+<article class="featuresBackground">
+    <div class="featuresHeader">
+        <h2>Сравните <span>5 вариантов</span> ликвидации компании</h2>
+    </div>
+
+
+    <!--первый вид ликвидации -->
+    <section class="feature feature1">
+        <div class="contHeader">Официальная ликвидация</div>
+        <div class="featureContent">
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Кому подходит:</span>
+                    <ul class="featureUL">
+                        <li>компания без долгов;</li>
+                        <li>компания не ведет хозяйственную деятельность;</li>
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span>Этапы ликвидации:</span>
+                    <ul class="featureUL">
+                        <li>уведомление налоговой о начале процесса ликвидации;</li>
+                        <li>2 публикации в журнале "Вестник налоговой регистрации";</li>
+                        <li>сдача промежуточного ликвидационного балланса;</li>
+                        <li>сдача ликвидационного балланса и снятие с налогового учета;</li>
+                    </ul>
+                </div>
+                <div class="featureStats">
+                    <span>Сроки: 90 дней</span>
+                    <span>Стоимость: 20 000 рублей</span>
+                </div>
+            </div>
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Плюсы:</span>
+                    <ul class="featureUL">
+                        <li>Фирма исключается из реестра юридическая "смерть" фирмы;</li>
+                        <li>Отсутствие правопреемства по обязательствам и долгам;</li>
+                        <li>Ликвидацию нельза признать недействительной;</li>
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span>Необходимые документы:</span>
+                    <ul class="featureUL">
+                        <li>Учередительные документы (Устав, Учередительный Договор);</li>
+                        <li>Решение/протокол о создании организации;</li>
+                        <li>Свидетельство с гос.регистрации;</li>
+                        <li>Свидетельство о постановке на налоговый учет, присвоении ИНН;</li>
+                        <li>Лист статистики Петростата, ксерокопии паспортов учередителей, директора и ин ИНН;</li>
+                        <li>Печать организации;</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Минусы:</span>
+                    <ul class="featureUL">
+                        <li>Расходы на погашение долгов перед бюджетом и кредиторами;</li>
+                        <li>Длительность процедуры 3,5 месяца;</li>
+                        <li>Возможность попасть под проверку со стороны налоговых органов:</li>
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span class="featureResume">Что делаем мы:</span>
+                    <ul class="featureUL">
+                        <li>Готовим полный пакет документов, записываем к нотариусу, оплачиваем госпошлину;</li>
+                        <li>Публикуем 2 обьявления в вестнике государственной регистрации;</li>
+                        <li>Получаем итоговые документы и доставляем их курьером;</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <form action="#" method="#" class="featureForm">
+            <h2>Оставьте заявку прямо сейчас и получите консультацию юриста по официальной ликвидации</h2>
+            <div class="featureFormFieldset">
+            <input type="text" name="Name" class="Name" id="nameOficial" value="Введите имя">
+            <input type="text" name="SecondName" class="SecondName" id="secondNameOficial" value="Введите фамилию">
+            <input type="submit" value="Бесплатная консультация">
+            </div>
+            <p>Или позвоните нам прямо сейчас +7(831) 217-15-98</p>
+        </form>
+    </section>
+
+
+    <!---->
+    <section class="feature feature1">
+        <div class="contHeader">Ликвидация через продажу управляющей компании</div>
+        <div class="featureContent">
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Кому подходит:</span>
+                    <ul class="featureUL">
+                        <li>ликвидация через продажу проводится при наличии задолженности у компании перед третьими лицами либо государством:</li>
+                        <li>ликвидация через продажу проводится при наличии задолженности у компании перед третьими лицами либо перед государством;</li>
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span>Этапы ликвидации:</span>
+                    <ul class="featureUL">
+                        <li>подготовка документов для смены директора и выхода из фирмы участников;</li>
+                        <li>оплата государственной пошлины за регистрационные действия;</li>
+                        <li>подача в МИФНС любого региона РФ при помощи ЭЦП(электронно цифровой подписи);</li>
+                        <li>получение листа записи и выписки ЕГРЮЛ по вашей фирме с новым директором и участником</li>
+                    </ul>
+                </div>
+                <div class="featureStats">
+                    <span>Сроки: 90 дней</span>
+                    <span>Стоимость: 20 000 рублей</span>
+                </div>
+            </div>
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Плюсы:</span>
+                    <ul class="featureUL">
+                        <li>Отсутствие налоговой проверки;</li>
+                        <li>небольшой срок избавления от фирмы: 15-20 дней;</li>
+                        <li>возможность отчуждения фирмы при наличии долгов;</li>
+                        <li>не используются номинальные директора и учередители;</li>
+                        <li>УК находится в другом регионе РФ;</li>
+                        <li>
+                            экономия времени и средств на нотариальной заверке документов;</li>
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span>Необходимые документы:</span>
+                    <ul class="featureUL">
+                        <li>учередительные документы(Устав, Учередительный договор);</li>
+                        <li>Решение/протокол о создании организации;</li>
+                        <li>свидетельство о гос. регистрации(ОГРН)</li>
+                        <li>свидетельство о постановке на налоговый учет;</li>
+                        <li>Лист статистики Петростата, ксерокопии паспортов учередителей, директора и ин ИНН;</li>
+                        <li>ксерокопии паспортов учередителей, директора и их ИНН;</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Минусы:</span>
+                    <ul class="featureUL">
+                        <li>компания не исключается из реестра;</li>
+                        <li>риски привлечения директора и учередителей к субсидиарной ответственности за предыдущие периоды при подаче заявления на банкротство вашей фирмы кредитором</li>
+
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span class="featureResume">Что делаем мы:</span>
+                    <ul class="featureUL">
+                        <li>получаем от вас все необходимые документы;
+                            готовим пакет документов по ликвидации через продажу;</li>
+                        <li>подписываем документы заверяем печатью Общества;</li>
+                        <li>подаем документы в налоговый орган при помощи ЭЦП;</li>
+                        <li>вы свободны от фирмы и проблем.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <form action="#" method="#" class="featureForm">
+            <h2>Оставьте заявку прямо сейчас и получите консультацию юриста по официальной ликвидации</h2>
+            <div class="featureFormFieldset">
+                <input type="text" name="Name" class="Name" id="nameOficial" value="Введите имя">
+                <input type="text" name="SecondName" class="SecondName" id="secondNameOficial" value="Введите фамилию">
+                <input type="submit" value="Бесплатная консультация">
+            </div>
+            <p>Или позвоните нам прямо сейчас +7(831) 217-15-98</p>
+        </form>
+    </section>
+
+
+    <!--третий вид ликвидации-->
+
+    <section class="feature feature1">
+        <div class="contHeader">Реорганизация фирмы в другой регион</div>
+        <div class="featureContent">
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Кому подходит:</span>
+                    <ul class="featureUL">
+                        <li>этот способ ликвидации фирмы актуален при наличии у фирмы долгов перед государством или третьими лицами: долговые обязательства не являются помехой для такой реорганизации.</li>
+
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span>Этапы ликвидации:</span>
+                    <ul class="featureUL">
+                        <li>предоставление компании-правопреемника
+                            подготовка документов для начала процедуры реорганизации;</li>
+                        <li>подача документов в МИФНС( подается от имени правопреемника)</li>
+                        <li>публикация в Вестнике( 2 публикации);</li>
+                        <li>подача документов в МИФНС об исключении из ЕГРЮЛ в связи с реорганизацией;</li>
+                        <li>получение листа записи и свидетельства о прекращении деятельности в связи с реорганизацией</li>
+                    </ul>
+                </div>
+                <div class="featureStats">
+                    <span>Сроки: 90 дней</span>
+                    <span>Стоимость: 20 000 рублей</span>
+                </div>
+            </div>
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Плюсы:</span>
+                    <ul class="featureUL">
+                        <li>Отсутствие налоговой проверки;</li>
+                        <li>фирма исключается из реестра как при официальной ликвидации;</li>
+                        <li>сложность отмены реорганизации со стороны государства и кредиторов;</li>
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span>Необходимые документы:</span>
+                    <ul class="featureUL">
+                        <li>свидетельство о госрегистрации ООО;</li>
+                        <li>свидетельство о постановке на учет в налоговый орган, присовении ИНН, решение(протокол) о создании ООО;</li>
+                        <li>решение(протокол) о назначении генерального директора;</li>
+                        <li>ксерокопии паспорта директора;</li>
+                        <li>копии паспортов учередителей-физических лиц и бухгалтера ООО;</li>
+                        <li>печать;</li>
+                        <li>номера ИНН директора и учередителей ООО;</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Минусы:</span>
+                    <ul class="featureUL">
+                        <li>длительность процедуры - 3-3.5 месяцев;</li>
+                        <li>наличие правопреемника;</li>
+
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span class="featureResume">Что делаем мы:</span>
+                    <ul class="featureUL">
+                        <li>готовим полный пакет документов для начала процедуры;</li>
+                        <li>публикуем обьявление в "Вестнике государственной регистрации";</li>
+                        <li>готовим полный пакет документов для окончания процуедуры реорганизации;;</li>
+                        <li>передаем вам лист записи о прекращении деятельности вашей фирмы;</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <form action="#" method="#" class="featureForm">
+            <h2>Оставьте заявку прямо сейчас и получите консультацию юриста по официальной ликвидации</h2>
+            <div class="featureFormFieldset">
+                <input type="text" name="Name" class="Name" id="nameOficial" value="Введите имя">
+                <input type="text" name="SecondName" class="SecondName" id="secondNameOficial" value="Введите фамилию">
+                <input type="submit" value="Бесплатная консультация">
+            </div>
+            <p>Или позвоните нам прямо сейчас +7(831) 217-15-98</p>
+        </form>
+    </section>
+
+    <!--четвертый способ-->
+
+    <section class="feature feature1">
+        <div class="contHeader">Ликвидация ООО через продажу в оффшорной фирме</div>
+        <div class="featureContent">
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Кому подходит:</span>
+                    <ul class="featureUL">
+                        <li>при существенных долгах и дотошных контрагентах, при понимании того что оплатить стоимость банкротства фирмы не представляется возможным разумным и целесообразным</li>
+
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span>Этапы ликвидации:</span>
+                    <ul class="featureUL">
+                        <li>предоставление оффшорной компании</li>
+                        <li>подготовка документов для ввода нового участника - оффшорной компании и смены директора на управляющую компанию оффшора</li>
+                        <li>нотариальное заверение документов в стране где поставлена на учет оффшорная компания (Сейшелские острова);</li>
+                        <li>апостилирование заверенных документов их нотариальный перевод песылка их из страны нахождения оффшора;</li>
+                        <li>подача/получение документов в налоговый орган;</li>
+                    </ul>
+                </div>
+                <div class="featureStats">
+                    <span>Сроки: 90 дней</span>
+                    <span>Стоимость: 20 000 рублей</span>
+                </div>
+            </div>
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Плюсы:</span>
+                    <ul class="featureUL">
+                        <li>новый собственник вашей компании - оффшорная компания;</li>
+                        <li>новый исполнительный орган не связан с РФ и найдти его невозможно;</li>
+                        <li>не используются номинальные директора;</li>
+                        <li>отсутствие налоговой проверки;</li>
+                        <li>сжатые сроки: 1.5 месяца и минимум документов</li>
+                        <li>закрытый реестр собственников оффшорных компаний не позволяет получить информацию кредиторам;</li>
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span>Необходимые документы:</span>
+                    <ul class="featureUL">
+                        <li>соучередительные документы вашего ООО со всеми изменениями;</li>
+                        <li>свидетельство ИНН;</li>
+                        <li>свидетельство ОГРН;</li>
+                        <li>ксерокопии паспорта директора;</li>
+                        <li>паспортные данные и номер ИНН участника( участников) Общества;</li>
+                        <li>паспортные данные и номер ИНН действующего генерального директора;</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Минусы:</span>
+                    <ul class="featureUL">
+                        <li>высокая цена по сравнению с другими способами альтернативной ликвидации.</li>
+
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span class="featureResume">Что делаем мы:</span>
+                    <ul class="featureUL">
+                        <li>готовим пакет документов</li>
+                        <li>вводим нового участника офшор</li>
+                        <li>направляем документы в офшор для нотариальной заверки</li>
+                        <li>выводим вас из состава учередителей и снимаем с должности директора</li>
+                        <li>получаем выписку ЕГРЮЛ в налоговой с новым владельцем</li>
+                        <li>вы свободный человек без фирмы и проблем</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <form action="#" method="#" class="featureForm">
+            <h2>Оставьте заявку прямо сейчас и получите консультацию юриста по официальной ликвидации</h2>
+            <div class="featureFormFieldset">
+                <input type="text" name="Name" class="Name" id="nameOficial" value="Введите имя">
+                <input type="text" name="SecondName" class="SecondName" id="secondNameOficial" value="Введите фамилию">
+                <input type="submit" value="Бесплатная консультация">
+            </div>
+            <p>Или позвоните нам прямо сейчас +7(831) 217-15-98</p>
+        </form>
+    </section>
+
+
+
+    <!--пятый вид-->
+    <section class="feature feature1">
+        <div class="contHeader">Ликвидация ООО через банкротство</div>
+        <div class="featureContent">
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Кому подходит:</span>
+                    <ul class="featureUL">
+                        <li>при наличии долгов превышающих 300 00 рублей и полученнх поним судебных решений;</li>
+                        <li>для тех кто хочет спать спокойно и забыть о кредиторах навсегда;</li>
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span>Этапы ликвидации:</span>
+                    <ul class="featureUL">
+                        <li>подача в Арбитражный суд заявления о признании банкротом</li>
+                        <li>выбор Арбитражного управляющего</li>
+                        <li>введение процедуры наблюдения</li>
+                        <li>переход к стадии конкурсного производства</li>
+                        <li>вынесение судебного решения</li>
+                        <li>вынесение судебного решения об окончании процедуры банкротства</li>
+                    </ul>
+                </div>
+                <div class="featureStats">
+                    <span>Сроки: 90 дней</span>
+                    <span>Стоимость: 20 000 рублей</span>
+                </div>
+            </div>
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Плюсы:</span>
+                    <ul class="featureUL">
+                        <li>нсамый правильный и чистый способ прощания с фирмой и долгами;</li>
+                        <li>невозможность отмены данной процедуры;</li>
+                        <li>сложность и невозможность привлесения к субсидиарной ответственности контролирующих лиц должника;</li>
+
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span>Необходимые документы:</span>
+                    <ul class="featureUL">
+                        <li>учередительные документы ООО со всеми изменениями</li>
+                        <li>свидетельство ИНН;</li>
+                        <li>свидетельство ОГРН;</li>
+                        <li>паспортные данные и номер ИНН участников Общества;</li>
+                        <li>паспортные данные и номер ИНН действующего генерального директора;</li>
+                        <li>финансово-хозяйственные документы организации</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="featureContentCol">
+                <div class="featureTile">
+                    <span>Минусы:</span>
+                    <ul class="featureUL">
+                        <li>длительность процедуры от 6 месяцев;</li>
+                        <li>высокая цена - от 300 000 рублей;</li>
+                        <li>подготовка большого количества документов.</li>
+
+                    </ul>
+                </div>
+                <div class="featureTile">
+                    <span class="featureResume">Что делаем мы:</span>
+                    <ul class="featureUL">
+                        <li>проводим анализ ситуаци на предприятии</li>
+                        <li>выстраиваем стратегию проведения процедуры банкротства</li>
+                        <li>подключаем надежного арбитражного управляющего</li>
+                        <li>оспариваем неправомерные действия контрагентов и 3х лиц;</li>
+                        <li>проводим юридическое и аудиторское сопровождение процедуры банкротства от начала до конца. </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <form action="#" method="#" class="featureForm">
+            <h2>Оставьте заявку прямо сейчас и получите консультацию юриста по официальной ликвидации</h2>
+            <div class="featureFormFieldset">
+                <input type="text" name="Name" class="Name" id="nameOficial" value="Введите имя">
+                <input type="text" name="SecondName" class="SecondName" id="secondNameOficial" value="Введите фамилию">
+                <input type="submit" value="Бесплатная консультация">
+            </div>
+            <p>Или позвоните нам прямо сейчас +7(831) 217-15-98</p>
+        </form>
+    </section>
+
+</article>
+<!--заслуги и преимущества-->
+<article class="weHelp">
+    <div class="weHelpHeader"><h2>Мы помогли ликвидировать уже<br> более <span>3000 компаний</span> за 8 лет работы</h2></div>
+    <div class="weHelpRow1">
+        <div>
+            <img src="img/Calendar.png" alt="">
+            <p>Подготавливаем<br> документы за 1 день</p>
+        </div>
+        <div>
+            <img src="img/CashCalc.png" alt="">
+            <p>Строго соблюдаем сроки<br> и не выходим<br> за рамки бюджета</p>
+        </div>
+    </div>
+    <div class="weHelpRow1">
+        <div>
+            <img src="img/Networking.png" alt="">
+            <p>Работаем по всей России и зарубежом</p>
+        </div>
+        <div>
+            <img src="img/Monithor.png" alt="">
+            <p>Специальное программное<br> обеспечение для бесперебойной<br> работы</p>
+        </div>
+    </div>
+</article>
+<!--карта сокровищ-->
+<article class="treashureMap">
+    <h2>Собственные юрлица в удаленных регионах РФ и офшорной зоне (Белиз, Сейшелы)</h2>
+    <p>Правопреемник вашей компании в офшоре и в регионах РФ усложняет<br> оспаривание ликвидационного процесса со стороны госорганов и кредиторов.</p>
+    <div class="map"></div>
+</article>
+
+<!-- четыре гарантии-->
+<article class="fourthGuaranties">
+    <h2>Вы получаете <span>4 официальных гарантии</span></h2>
+    <div class="fourthGuarantiesRow">
+        <div class="fourthGuarantiesColumn"><img src="img/Scroll.png" alt="">
+            <h3>Гарантия соблюдения законодательства РФ</h3>
+            <p>Мы гарантируем юридическую чистоту сделки. Подготавливаем всю документацию в соответствии с законодательством РФ</p>
+        </div>
+        <div class="fourthGuarantiesColumn"><img src="img/Seif.png" alt="">
+            <h3>Гарантия конфиденциальности</h3>
+            <p>Все базы данных защищены и ни при каких обстоятельствах не передаются третьим лицам</p>
+        </div>
+        <div class="fourthGuarantiesColumn"><img src="img/Pen.png" alt="">
+            <h3>Гарантия внесения изменений</h3>
+            <p>Гарантируем внесение изменений в учередительные документы без ошибок в заявленные сроки</p>
+        </div>
+        <div class="fourthGuarantiesColumn"><img src="img/Revard.png" alt="">
+            <h3>Гарантия возврата</h3>
+            <p>ВАозврат 100% денежных средств при отказе в регистрации изменений в госоргане</p>
+        </div>
+    </div>
+</article>
+
+<!--Форма фирмы-->
+<article class="finalForm">
+    <h2>Ликвидация фирмы при поддержке надежной компании</h2>
+    <form action="#" method="#" class="featureForm">
+        <h2>Оставьте заявку прямо сейчас и получите консультацию юриста по ликвидации ООО</h2>
+        <div class="featureFormFieldset">
+            <input type="text" name="Name" class="Name" id="nameOficial" value="Введите имя">
+            <input type="text" name="SecondName" class="SecondName" id="secondNameOficial" value="Введите фамилию">
+            <input type="submit" value="Бесплатная консультация" id="submitfinale">
+        </div>
+
+    </form>
+</article>
+
+<!--пошаговость-->
+<article class="stepByStep">
+
+    <h2>Пошаговая ликвидация вашего ООО</h2>
+
+    <section class="stepByStepRow1">
+        <div class="rowTile">
+            <img src="img/CallBack.png" alt="">
+            <p>Вы звоните оставляете заявку на нашем сайте</p>
+        </div>
+        <div class="rowTile">
+            <img src="img/Dogowor.png" alt="">
+            <p>Заключаем официальный договор</p>
+        </div>
+        <div class="rowTile">
+            <img src="img/Diplomat.png" alt="">
+            <p>Вы получаете документы о ликвидации фирмы</p>
+        </div>
+    </section>
+    <section class="stepByStepRow2">
+        <div class="rowTile">
+            <img src="img/Analytics.png" alt="">
+            <p>Мы анализируем вашу ситуацию</p>
+        </div>
+        <div class="rowTile">
+            <img src="img/treashureMap.png" alt="">
+            <p>Запуск выбранной стратегии ликвидации</p>
+        </div>
+    </section>
+</article>
+<article class="Contacts">
+    <section class="contactList">
+        <h2>Контакты</h2>
+        <div class="addres">
+            <span>
+            <img src="img/HouseIcon.png" alt="" class="contactIcon">
+            <p>Наш офис:</p>
+            </span>
+            <p class="contValue">Нижний Новгород</p>
+            <p class="contValue">Мануфактурная, 14а, офис 406</p>
+            <span>
+            <img src="img/phoneIcon.png" alt="" class="contactIcon">
+            <p>С 10.00 до 20.00:</p>
+            </span>
+            <p class="contValue">+7(831)217-15-98</p>
+            <span>
+            <img src="img/boxIcon.png" alt="" class="contactIcon">
+            <p>Для документов:</p>
+            </span>
+            <p class="contValue">11111111@gmail.com</p>
+        </div>
+        <div class="phonenumber"></div>
+        <div class="mailaddres"></div>
+
+    </section>
+</article>
+</main>
+<footer>
+    <span>Нижегородский юридиический центр</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
