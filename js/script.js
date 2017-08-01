@@ -1,11 +1,11 @@
 /**
  * Created by Егор on 31.05.2017.
  */
-console.log("script working");
+/*console.log("script working");
 window.onload= init();
 function init(){
     /*alert("Dock is loaded");*/
-    var trig1=document.getElementById("arrowButton1");
+   /* var trig1=document.getElementById("arrowButton1");
     var Mask=document.getElementById("reasonListMask");
     trig1.onclick=function(){
         Mask.style.display="none";
@@ -27,5 +27,25 @@ function init(){
         var select=document.getElementById("Reason");
         select.value="reason2";
         alert(select.value);
-    }
-}
+    }*/
+//}
+
+$(document).ready(function () {
+
+    //alert('JQuery запущен.'); // Тут размещаем нужный Вам JQuery код.
+    $('#ul1').hide();
+    $('#arrowButton1').click(function () {
+        $('#ul1').slideToggle(1000);
+
+    })
+    $('#reasonValue1').click(function () {
+        $('#Reason [value="reason1"]').attr("selected", "selected");
+        alert($('#Reason').val());
+    })
+    $('#reasonValue2').click(function () {
+        $('#Reason [value="reason2"]').attr("selected", "selected");
+        alert($('#Reason').val());
+    })
+
+
+})

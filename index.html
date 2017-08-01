@@ -86,11 +86,11 @@
     <input type="text" id="Name" name="name" value="Введите имя" />
     <input type="text" id="Phone" name="name" value="Введите телефон" />
     <select name="reason" id="Reason" value="some reason" class="hidden">
-        <option value="reason1">reason1</option>
-        <option value="reason2">reason2</option>
+        <option value="reason1" id="firstReas">reason1</option>
+        <option value="reason2" id="secondReas">reason2</option>
     </select>
     <div id="reasonListMask">Причина ликвидации</div>
-    <ul class="reasonList hidden" id="ul1">
+    <ul class="reasonList" id="ul1">
         <li id="reasonValue1">reason1</li>
         <li id="reasonValue2">reason2</li>
     </ul>
@@ -658,6 +658,8 @@
     <span>Нижегородский юридиический центр</span>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/script.js">
+</script>
 </body>
 </html>

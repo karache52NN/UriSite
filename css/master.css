@@ -114,6 +114,7 @@ nav a:hover{
     justify-content: space-around;
     align-items: flex-start;
 
+
 }
 .redButton{
     width: 210px;
@@ -142,7 +143,7 @@ nav a:hover{
     /*position: relative;
     top: 16px;
     left: -3px;*/
-    margin-left:-12px;
+    margin-left: -10px;
     width: 23px;
     height: 46px;
     display: inline-block;
@@ -182,11 +183,13 @@ nav a:hover{
     background-color: white;
 }
 .reasonList{
-    margin-top: 0px;
     padding-left: 0px;
     margin-left: 0px;
     width: 210px;
     display: inline-block;
+    position: absolute;
+    top: 1210px;
+    left: 43%;
 
 }
 .reasonList li{
